@@ -1,0 +1,457 @@
+
+:root{
+    --brandColor : #F58634;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+header nav{
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+header nav .nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    font-size: 16px;
+}
+
+header > nav > .nav-menu > a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+header > nav > .nav-menu a:last-child{
+    background-color: var(--brandColor);
+    color: white;
+}
+
+
+/* section home */
+
+.home{
+    position: relative;
+    display: grid;
+}
+
+.home > .subject-text{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.home > .subject-text > h2{
+    font-weight: 450;
+    font-size: 30px;
+}
+
+.home > .subject-text > p{
+    font-size: 14px;
+    width: 250px;
+    position: relative;
+}
+
+.home .subject-text p::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    width: 20px;
+    height: 3px;
+    background-color: var(--brandColor);
+    border-radius: 10px;
+}
+
+.home > .image-content > img{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.optionHouse{
+
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    height: 50px;
+}
+
+.optionHouse > div > :first-child {
+    font-size: 11px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+
+.optionHouse > div > :first-child{
+    margin-bottom: 5px;
+}
+
+.optionHouse > button{
+    color: white;
+    background-color: var(--brandColor);
+    border-radius: 0px;
+    border: none;
+    width: 98%;
+    height: 90%;
+}
+
+/* end section home */
+
+/* section house */
+
+.house{
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minMax(300px,1fr));
+    justify-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.house > nav {
+    width: 100%;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 200px 80px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.house > nav h4{
+    font-size: 30px;
+}
+
+.house nav p:nth-child(2){
+    color: #F58634;
+}
+
+.house > nav > p{
+   
+    font-size: 14px;
+}
+
+.house > nav > a{
+    grid-column: -1;
+    color: black;
+    font-weight: 600;
+}
+
+
+.house > .card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: white;
+}
+
+.house > .card > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card > .like {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.card > .room{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px;
+    font-size: 15px;
+    color: var(--brandColor);
+    font-weight: 600;
+}
+
+.card  > .description{
+    padding: 10px;
+    display: grid;
+}
+
+.card > .description > p{
+    font-size: 16px;
+    font-weight: 0;
+    margin-bottom: 10px;
+}
+
+.card > .description > h4{
+    color: var(--brandColor);
+    font-size: 20px;
+}
+
+/* end section house */
+
+/* section preview */
+
+.review{
+    padding: 20px;
+}
+
+.review > .firstBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.review > .firstBar:first-child{
+    font-weight: 500;
+    font-size: 22px;
+}
+.review > .firstBar > a{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.review > .wrapper{
+    padding: 50px;
+    height: 350px;
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.review > .wrapper > .card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.review > .wrapper > .card > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review > .wrapper > .card > p{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 10px;
+    color: var(--brandColor);
+    font-weight: 600;
+}
+
+/* end section review */
+
+
+/* section blocg */
+
+.blog{
+    padding: 20px;
+    width: 800px;
+    margin : 20px auto;
+}
+
+.blog > .f-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.blog > .f-menu > h4{
+    font-size: 30px;
+}
+
+.blog > .f-menu > a{
+    font-weight: 600;
+   color: black;
+}
+
+.blog > .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+
+}
+
+.blog > .content > img:first-child{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog > .content > .sideright{
+    display: grid;
+    gap: 10px;
+}
+.blog > .content > .sideright > .card {
+    display: flex;
+    background-color: white;
+}
+.blog > .content > .sideright > .card > .text{
+    display: grid;
+    align-items: center;
+    padding: 10px;
+}
+.blog > .content > .sideright > .card > .text > h5{
+    letter-spacing: 0.2px;
+}
+.blog > .content > .sideright > .card > .text > p{
+    font-size: 12px;
+}
+.blog > .content > .sideright > .card > img{
+    width: 200px;
+    height: 150px;
+}
+.blog > .content > .profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.blog > .content > .profile > img{
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.blog > .content > .profile > .nametag  > p:first-child{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.blog > .content > .profile > .nametag > p:last-child{
+    font-size: 10px;
+}
+
+.blog > .tips{
+    font-size: 13px;
+}
+
+.blog > .tips > h5{
+    font-size: 16px;
+}
+
+
+/* end section blog */
+
+/* section discount */
+
+.discount{
+    margin: auto;
+    margin-top: 100px;
+    width: 1000px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--brandColor);
+    color: white;
+    font-size: 25px;
+    display: grid;
+    justify-items: center;
+}
+
+.discount > form{
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.discount > form > input{
+    width: 100%;
+    padding: 18px;
+    border:none;
+    font-size: 16px;
+   
+}
+
+.discount > form > input:focus{
+   outline: none;
+}
+
+.discount > form > button{
+    width: 120px;
+    padding: 15px;
+    background-color:var(--brandColor);
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+
+/* end section discount */
+
+
+/* footer */
+
+footer{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer > h2{
+    font-size: 16px;
+}
+
+footer > .socialmedia{
+    display: flex;
+    gap: 20px;
+}
+
+footer > .socialmedia > img{
+    height: 40px;   
+    cursor: pointer;
+}
+
+/* end footer */
